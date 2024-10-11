@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Warm-Up API
         run: |
-          curl -X GET https://funday-bites.vercel.app/api/warmup
+           curl -X GET https://funday-bites.vercel.app
