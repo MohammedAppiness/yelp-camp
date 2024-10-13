@@ -1,0 +1,17 @@
+name: Warm-Up Function
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every minute
+  workflow_dispatch:  # Enables manual triggering
+
+jobs:
+  warmup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Warm-Up API
+        run: |
+          for i in {1..6}; do
+            curl -X GET https://funday-bites.vercel.app
+            sleep 10  # Wait for 10 seconds
+          done
