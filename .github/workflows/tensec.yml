@@ -11,7 +11,5 @@ jobs:
     steps:
       - name: Warm-Up API
         run: |
-          for i in {1..6}; do
-            curl -X GET https://funday-bites.vercel.app
-            sleep 10  # Wait for 10 seconds
+          curl -X GET https://funday-bites.vercel.app
           done
