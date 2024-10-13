@@ -12,4 +12,3 @@ jobs:
       - name: Warm-Up API
         run: |
           curl -X GET https://funday-bites.vercel.app
-          done
